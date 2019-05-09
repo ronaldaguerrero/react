@@ -6,19 +6,10 @@ import './App.css';
 
 
 
+var d = new Date();
+var n = d.toLocaleTimeString();
 
-
-function displayTime(){
-  var d = new Date();
-  var n = d.toLocaleTimeString();
-  document.getElementById('time').innerHTML = n
-}
-
-function time() {
-  let timer = setInterval(displayTime, 1000)
-}
-
-time();
+document.getElementById('time').innerHTML = n;  
 
 function App() {
   return (
